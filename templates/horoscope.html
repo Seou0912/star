@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'hor.css' %}" />
+    <title>오늘의 별자리 운세</title>
+  </head>
+  <style></style>
+  <body>
+    <div class="container">
+      <div class="glass-container">
+        <nav class="navbar">
+          <div class="logo"><a href="#">{{ user.nickname }} 님</a></div>
+          <ul class="nav-links">
+            <li class="daily">
+              <a href="{% url 'daily_quote' %}">오늘의 한마디</a>
+            </li>
+            &nbsp; &nbsp;
+            <li class="zodiac">
+              <a href="{% url 'zodiac:daily_fortune' %}">띠별운세</a>
+            </li>
+            &nbsp;&nbsp;
+            <li class="mbti"><a href="{% url 'mbti:Mbti' %}">MBTI 운세</a></li>
+          </ul>
+        </nav>
+        <div class="content">
+          <div class="main">
+            <h2>Hey! 👋,<br />오늘의 별자리 운세</h2>
+            <p>{{ horoscope }}</p>
+            <button>전 체 보 기</button>
+          </div>
+          <div class="image-wrapper">
+            <img src="{% static 'hor.png' %}" />
+            <div class="attrebute">
+              <a
+                href="https://www.freepik.com/free-psd/marketing-concept-with-woman-rocketship_33417710.htm#page=2&query=3d%20illustration&position=32&from_view=search&track=ais"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="{% static 'h.js' %}"></script> -->
+  </body>
+</html>

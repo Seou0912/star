@@ -1,0 +1,65 @@
+{% load static %} {% csrf_token %}
+
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'login.css' %}" />
+
+    <title>Fortune Login</title>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="{% static 'f_logo.png' %}" width="40" height="auto" />
+      <a href="#">Daily Fortune</a>
+    </div>
+
+    <div class="container">
+      <h1>Login to your account 👋🏼</h1>
+      <div class="social-login">
+        <button class="apple">
+          <i class="bx bxl-apple"></i>
+          Use apple
+        </button>
+
+        <button class="Kakao" onclick="location.href='/kakao/login'">
+          <i class="bx bxl-kickstarter"></i>
+          Use Kakao
+        </button>
+      </div>
+      <div class="divider">
+        <div class="line"></div>
+        <br />
+        <p>Or</p>
+        <br />
+        <div class="line"></div>
+      </div>
+
+      <form method="post">
+        <!-- <h1>Login</h1> -->
+        {% csrf_token %} {% for field in form %} {{field.label_tag}}
+        <div class="custome-input">
+          {{field}}
+          <i class="bx bx-at"></i>
+        </div>
+        {% endfor %}
+
+        <br />
+        <br />
+
+        <button type="submit" class="login">로그인</button>
+        <div class="links">
+          <a href="#">Reset Password</a>
+          <a href="{% url 'signup' %}">Don't have an account?</a>
+          <br />
+        </div>
+        <br />
+      </form>
+    </div>
+  </body>
+</html>

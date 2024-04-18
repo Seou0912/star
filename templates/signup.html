@@ -1,0 +1,98 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>회원가입</title>
+    <!-- Bootstrap CSS 추가 (선택사항) -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="form-group">회원가입</h2>
+      <form method="POST">
+        {% csrf_token %} {% for field in form %} {{field.label_tag}}
+        <div class="form-control" outline="none">
+          {{field}}
+          <i class="form-control" outline="none"></i>
+        </div>
+        {% endfor %}
+        <!-- <div class="form-group">
+          <label for="email">이메일</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="이메일을 입력하세요"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password1">비밀번호</label>
+          <input
+            type="password1"
+            class="form-control"
+            id="password1"
+            name="password1"
+            placeholder="비밀번호를 입력하세요"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password2">비밀번호 확인</label>
+          <input
+            type="password"
+            class="form-control"
+            id="password2"
+            name="password2"
+            placeholder="비밀번호를 한번 더 입력하세요"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="birth_date">생년월일</label>
+          <input
+            type="date"
+            class="form-control"
+            id="birth_date"
+            name="birth_date"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="nickname">닉네임</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nickname"
+            name="nickname"
+            placeholder="닉네임을 입력하세요"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="mbti">MBTI</label>
+          <input
+            type="text"
+            class="form-control"
+            id="mbti"
+            name="mbti"
+            placeholder="MBTI를 입력하세요"
+            required
+          />
+        </div> -->
+        <button type="submit" class="btn btn-primary">회원가입</button>
+        <a href="/">로그인 페이지로 이동</a>
+      </form>
+    </div>
+    <!-- Bootstrap JS 추가 (선택사항) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

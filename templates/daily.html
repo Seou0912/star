@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'daily.css' %}" />
+    <title>오늘의 한마디</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="particles"></div>
+      <div class="info-text">
+        <h2>행복한 하루 맞이한 {{ user.nickname }} 님</h2>
+        <h1>오늘의 한마디</h1>
+        <br />
+        <h3>{{ quote }}</h3>
+        <a href="#about" class="scroll"><i class="bx bxs-down-arrow"></i></a>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="header">
+        <h1>About Me</h1>
+        <a href="#">Here Me</a>
+      </div>
+
+      <div class="card">
+        <img src="{% static 'logo.png' %}" />
+        <div class="info">
+          <h1>운명의 신호, 오늘의 행운</h1>
+          <p>
+            생년월일을 기반으로 한 개인 맞춤형 운세를 제공하여 더욱 정확하고
+            의미 있는 정보를 얻을 수 있어요. <br />
+            Offers personalized fortunes based on your birthdate, providing more
+            accurate and meaningful information.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="features">
+      <div class="header">
+        <!-- <h1>Features</h1>
+        <a href="#">See More</a> -->
+      </div>
+      <div class="feature-cards">
+        <div class="card">
+          <div class="info">
+            <!-- <button onclick="location.href='/zodiac/today/'">
+              <i class="bx bxs-devices"></i> -->
+              <a href="{% url 'zodiac:daily_fortune' %}">
+                <img src="{% static 'zodiac2.png' %}" width="150" height="150" />
+              </a>
+            </button>
+            <br />
+            <br />
+            <br />
+            <br />
+            <h1>오늘의 띠별 운세</h1>
+          </div>
+        </div>
+        <div class="card">
+          <div class="info">
+            <a href="{% url 'mbti:Mbti' %}">
+              <img src="{% static 'mbti1.png' %}" width="150" height="150" />
+            </a>
+            <br />
+            <br />
+            <br />
+            <br />
+            <h1>오늘의 MBTI 운세</h1>
+          </div>
+        </div>
+        <div class="card">
+          <div class="info">
+            <a href="{% url 'star:fortune' %}">
+              <img src="{% static 'star.png' %}" width="150" height="150" />
+            </a>
+            <br />
+            <br />
+            <br />
+            <br />
+            <h1>오늘의 별자리 운세</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button class="scroll-top" onclick="scrollToTop()">
+      <i class="bx bxs-up-arrow"></i>
+    </button>
+    <br />
+    <a href="/logout/">
+      <button
+        class="logout-button"
+        style="background-color: transparent; border: none; color: black"
+      >
+        Logout
+      </button>
+    </a>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="{% static 'script.js' %}"></script>
+  </body>
+</html>
