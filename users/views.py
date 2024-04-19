@@ -173,3 +173,62 @@ def getUserInfo(reqeust):
     except User.DoesNotExist:
         # 사용자가 존재하지 않는 경우의 처리
         pass
+
+
+# naver 로그인
+
+
+@api_view(["GET"])
+@permission_classes([AllowAny])
+def NaverLoginView(request):
+    naver_client_id = settings.NAVER_CLIENT_ID
+    redirect_uri = (
+        "http://127.0.0.1:8000/naver/callback/"  # 네이버에 등록한 리다이렉트 URI 사용
+    )
+    state_token = "state_token"  # 상태 토큰은 랜덤한 값으로 생성
+    url = f"https://nid.naver.com/oauth2.0/authorize?client_id={naver_client_id}&response_type=code&redirect_uri={redirect_uri}&state={state_token}"
+    res = redirect(url)
+    return res
+
+
+@api_view(["GET"])
+@permission_classes([AllowAny])
+def getUserInfo2(request):
+    CODE = request.query_params["code"]
+    url = "https://nid.naver.com/oauth2.0/token"
+    client_id = settings.NAVER_CLIENT_ID
+    client_secret = settings.NAVER_CLIENT_SECRET
+    redirect_uri = (
+        "http://127.0.0.1:8000/naver/callback"  # 네이버에 등록한 리다이렉트 URI 사용
+    )
+    res = {
+        "grant_type": "authorization_code",
+        "client_id": client_id,
+        "client_secret": client_secret,
+        "code": CODE,
+        "redirect_uri": redirect_uri,
+    }
+    response = requests.post(url, data=res)
+
+    token_json = response.json()
+    access_token = token_json.get("access_token")
+
+    if not access_token:
+        return Response(status=status.HTTP_400_BAD_REQUEST)
+
+    # 네이버 API로 사용자 정보를 가져오는 요청
+    user_info_res = requests.get(
+        "https://openapi.naver.com/v1/nid/me",
+        headers={"Authorization": f"Bearer {access_token}"},
+    )
+    user_info_json = user_info_res.json()
+    naver_account = user_info_json.get("response", {})
+
+    email = naver_account.get("email")
+    if not email:
+        return Response(
+            {"message": "Email not provided"}, status=status.HTTP_400_BAD_REQUEST
+        )
+
+    # 사용자 정보를 저장하거나 필요한 처리를 진행한 후 리다이렉트
+    return redirect("/dailyquote/today/")

@@ -22,14 +22,13 @@
     <div class="container">
       <h1>Login to your account 👋🏼</h1>
       <div class="social-login">
-        <button class="apple">
-          <i class="bx bxl-apple"></i>
-          Use apple
+        <button class="naver" onclick="parent.location.href='/naver/login'">
+          <img scr="{% static 'naver.png' %}" />Use NAVER
         </button>
 
         <button class="Kakao" onclick="location.href='/kakao/login'">
-          <i class="bx bxl-kickstarter"></i>
-          Use Kakao
+          <!-- <i class="bx bxl-kickstarter"></i> -->
+          Use KAKAO
         </button>
       </div>
       <div class="divider">
@@ -41,7 +40,6 @@
       </div>
 
       <form method="post">
-        <!-- <h1>Login</h1> -->
         {% csrf_token %} {% for field in form %} {{field.label_tag}}
         <div class="custome-input">
           {{field}}
@@ -61,5 +59,6 @@
         <br />
       </form>
     </div>
+    <script src="{% static 'naver.js' %}"></script>
   </body>
 </html>
