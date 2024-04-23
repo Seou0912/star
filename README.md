@@ -110,13 +110,12 @@ OpenAi 기반으로 제공합니다. <br>
 </table>
 
 
-# 아키텍쳐
-<img src="/images/SA2.png" width=80% margin="auto">
 
 # 팀 정보
 <table>
   <tbody>
-   https://github.com/Seou0912           : Backend 정 서우
+   https://github.com/Seou0912           : Backend 정 서우 <br>
+   
    https://github.com/benchprincess      : Backend 황 지원
   </tbody>
 </table>
