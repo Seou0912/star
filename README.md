@@ -25,177 +25,90 @@
 
 #### Back End
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) 
-![Static Badge](https://img.shields.io/badge/aws-Ec2)
 
 <br>
 
 #### Infra
-<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"> <img src="https://img.shields.io/badge/amazonec2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white"> <img src="https://img.shields.io/badge/jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white">
+<img src="https://img.shields.io/badge/amazonec2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white"> 
 <br>
 
 # 주요 기능
 
-### 여행 그룹 성향 입력 및 분석 
-여행 그룹의 성향을 입력받고 이를 빅데이터 기반으로 분석합니다.<br>
+### 로그인 , 회원가입 
+로그인이나 회원가입을 하면 오늘의 한마디로 화면이 전환됩니다.<br>
 
->#### 입력 여행 성향: <br>
->`공항`, `식도락 여행`, `쇼핑`, `제주의 문화유산`, <br>
->`레저와 체험`,`전시와 행사`, `천천히 걷기`, `휴식과 치유 여행` <br>
+>#### 오늘의 한마디: <br>
+>`별자리운세`, `띠별운세`, `MBTI 운세` <br>
 
 ### 여행 지점들의 일자별 최적 동선 제공
 
-사용자가 원하는 여행 지점들을 입력받고 거리정보, <br>
-알고리즘을 기반으로 최적의 동선을 제공합니다. <br>
-
-### 현재 여행 그룹의 여행지 추천
-
-형태소 분석 및 빅데이터 기반으로 여행 그룹에 맞는 <br>
-여행지들을 추천합니다.<br>
+사용자의 생년월일로 별자리와 띠에 대한 운세를, <br>
+OpenAi 기반으로 제공합니다. <br>
 
 # 화면 구성
 
-### 1) 로그인 및 메인페이지
+### 1) 로그인 및 회원가입
 
 <table>
   <tbody>
     <tr>
       <td>
-        로그인
+        로그인 화면
       </td>
       <td>
-        메인 화면 
+        회원가입 화면 
       </td>
     <tr/>
     <tr>
       <td>
       <p align="center">
-      <img src="/images/로그인.gif" width="260" height="450">
+      <img src="/static/login.gif" width="260" height="450">
       </p>
       </td>
       <td>
       <p align="center">
-      <img src="/images/메인화면.gif" width="260" height="450">
+      <img src="/static/signup.gif" width="260" height="450">
       </p>
       </td>
     <tr/>
   </tobdy>
 </table>
 
-### 2) 여행 일정 정보 입력
+### 2)  오늘의 한마디, 띠별 운세, 
 
 <table>
   <tbody>
     <tr>
       <td>
-        여행 제목, 기간 설정
+        오늘의 한마디, 띠별 운세
       </td>
       <td>
-        가고 싶은 여행지 추가
+        띠별 운세, mbti 운세, 별자리 운세
+      </td>
+      <td>
+        mbti 운세, 별자리 운세
       </td>
     <tr/>
     <tr>
       <td>
       <p align="center">
-        <img src="/images/여행일정설정.gif" width="260" height="450"  >
+        <img src="/static/daily.gif" width="260" height="450"  >
         </p>
       </td>
       <td>
       <p align="center">
-        <img src="/images/여행지 추가.gif" width="260" height="450"  >
+              <img src="/static/zo.gif" width="260" height="450"  >
+        </p>
+      </td>
+      <td>
+      <p align="center">
+      <img src="/static/mbti.gif" width="260" height="450"  >
         </p>
       </td>
     <tr/>
   </tobdy>
 </table>
 
-### 3) 여행 일정별 추천 및 동선 제공
-
-<table>
-  <tbody>
-    <tr>
-      <td>
-        일자별 여행 동선 제공
-      </td>
-      <td>
-        여행 상세 동선 확인
-      </td>
-      <td>
-        여행 상세 동선 제공
-      </td>
-    <tr/>
-    <tr>
-      <td>
-      <p align="center">
-        <img src="/images/여행지 자동 추천.gif" width="260" height="450"  >
-        </p>
-      </td>
-      <td>
-      <p align="center">
-              <img src="/images/여행 계획보기.gif" width="260" height="450"  >
-        </p>
-      </td>
-      <td>
-      <p align="center">
-      <img src="/images/지도사용법.gif" width="260" height="450"  >
-        </p>
-      </td>
-    <tr/>
-  </tobdy>
-</table>
-
-### 4) 여행 지점들의 네이버맵, 티맵 연동
-
-<table>
-  <tbody>
-    <tr>
-      <td>
-        네이버 맵
-      </td>
-      <td>
-        티맵 
-      </td>
-    <tr/>
-    <tr>
-      <td>
-      <p align="center">
-        <img src="/images/네이버맵 연동.gif" width="260" height="450"  >
-        </p>
-      </td>
-      <td>
-      <p align="center">
-        <img src="/images/티맵연동.gif" width="260" height="450"  >
-        </p>
-      </td>
-    <tr/>
-  </tobdy>
-</table>
-
-### 5) 여행 그룹 성향 입력 및 추천
-
-<table>
-  <tbody>
-    <tr>
-      <td>
-        여행지 성향 설정
-      </td>
-      <td>
-        여행지 추천 
-      </td>
-    <tr/>
-    <tr>
-      <td>
-      <p align="center">
-        <img src="/images/성향체크.gif" width="260" height="450"  >
-        </p>
-      </td>
-      <td>
-      <p align="center">
-        <img src="/images/추천.gif" width="260" height="450"  >
-        </p>
-      </td>
-    <tr/>
-  </tobdy>
-</table>
 
 # 아키텍쳐
 <img src="/images/SA2.png" width=80% margin="auto">
