@@ -92,12 +92,12 @@ OpenAi 기반으로 제공합니다. <br>
     <tr>
       <td>
       <p align="center">
-        <img src="/static/daily.GIF" width="230" height="420"  >
+        <img src="/static/daily.gif" width="230" height="420"  >
         </p>
       </td>
       <td>
       <p align="center">
-              <img src="/static/zo.GIF" width="230" height="420"  >
+              <img src="/static/zo.gif" width="230" height="420"  >
         </p>
       </td>
       <td>
