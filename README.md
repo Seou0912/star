@@ -118,12 +118,8 @@ OpenAi 기반으로 제공합니다. <br>
   <tbody>
     <tr>
       <td align="center"><a href="https://github.com/tjsguddl96"><img src="https://avatars.githubusercontent.com/u/58164681?v=4" width="150px;" alt=""/><br /><b>김선형</b></a> <br>BE (팀장) </b><br /></td>
-      <td align="center"><a href="https://github.com/smartopens"><img src="https://avatars.githubusercontent.com/u/44837403?v=4" width="150px;" alt=""/><br /><b>김현명</b></a> <br>FE </b><br /></td>
       <td align="center"><a href="https://github.com/steve15963"><img src="https://avatars.githubusercontent.com/u/77353988?v=4" width="150px;" alt=""/><br /><b>송진현</b></a> <br>FE </b><br /></td>
     <tr/>
-      <td align="center"><a href="https://github.com/chech2"><img src="https://avatars.githubusercontent.com/u/90683516?v=4" width="150px;" alt=""/><br /><b>이채림</b></a> <br>BE </b><br /></td>
-      <td align="center"><a href="https://github.com/juuyoungjeon"><img src="https://avatars.githubusercontent.com/u/44489852?v=4" width="150px;" alt=""/><br /><b>전주영</b></a> <br>BE (부팀장) </b><br /></td>
-      <td align="center"><a href="https://github.com/leehk77789"><img src="https://avatars.githubusercontent.com/u/96775737?v=4" width="150px;" alt=""/><br /><b>정유준</b></a> <br>BE </b><br /></td>
-    </tr>
+      
   </tbody>
 </table>
