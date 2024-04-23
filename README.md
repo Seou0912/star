@@ -116,10 +116,7 @@ OpenAi 기반으로 제공합니다. <br>
 # 팀 정보
 <table>
   <tbody>
-    <tr>
-      <td align="center"><a href="https://github.com/tjsguddl96"><img src="https://avatars.githubusercontent.com/u/58164681?v=4" width="150px;" alt=""/><br /><b>김선형</b></a> <br>BE (팀장) </b><br /></td>
-      <td align="center"><a href="https://github.com/steve15963"><img src="https://avatars.githubusercontent.com/u/77353988?v=4" width="150px;" alt=""/><br /><b>송진현</b></a> <br>FE </b><br /></td>
-    <tr/>
-      
+   https://github.com/Seou0912           : Backend 정 서우
+   https://github.com/benchprincess      : Backend 황 지원
   </tbody>
 </table>
