@@ -92,17 +92,17 @@ OpenAi 기반으로 제공합니다. <br>
     <tr>
       <td>
       <p align="center">
-        <img src="/static/daily.gif" width="260" height="450"  >
+        <img src="/static/daily.Gif" width="230" height="420"  >
         </p>
       </td>
       <td>
       <p align="center">
-              <img src="/static/zo.gif" width="260" height="450"  >
+              <img src="/static/zo.Gif" width="230" height="420"  >
         </p>
       </td>
       <td>
       <p align="center">
-      <img src="/static/mbti.gif" width="260" height="450"  >
+      <img src="/static/mbti.gif" width="230" height="420"  >
         </p>
       </td>
     <tr/>
