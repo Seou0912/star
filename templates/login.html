@@ -22,13 +22,14 @@
     <div class="container">
       <h1>Login to your account 👋🏼</h1>
       <div class="social-login">
-        <button class="naver" onclick="parent.location.href='/naver/login'">
-          <img scr="{% static 'naver.png' %}" />Use NAVER
+        <button class="apple">
+          <i class="bx bxl-apple"></i>
+          Use apple
         </button>
 
         <button class="Kakao" onclick="location.href='/kakao/login'">
-          <!-- <i class="bx bxl-kickstarter"></i> -->
-          Use KAKAO
+          <i class="bx bxl-kickstarter"></i>
+          Use Kakao
         </button>
       </div>
       <div class="divider">
@@ -44,21 +45,24 @@
         <div class="custome-input">
           {{field}}
           <i class="bx bx-at"></i>
+          {% if field.errors %} {% for error in field.errors %}
+          <p>{{ error }}</p>
+          {% endfor %} {% endif %}
         </div>
-        {% endfor %}
+        {% if form.non_field_errors %} {% for error in form.non_field_errors %}
+        <p>{{ error }}</p>
+        {% endfor %} {% endif %}
 
         <br />
         <br />
 
         <button type="submit" class="login">로그인</button>
         <div class="links">
-          <a href="#">Reset Password</a>
           <a href="{% url 'signup' %}">Don't have an account?</a>
           <br />
         </div>
         <br />
       </form>
     </div>
-    <script src="{% static 'naver.js' %}"></script>
   </body>
 </html>
