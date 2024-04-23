@@ -13,5 +13,4 @@ urlpatterns = [
     path("horoscope/", include("horoscope.urls")),  # horoscope 앱의 URL 패턴 포함
     path("mbti/", include("mbti.urls")),  #
     path("allzodiac/", include("allzodiac.urls")),  # allzodiac 앱의 URL 패턴 포함
-    path("naver/login/", include("users.urls")),  #
 ]
