@@ -122,7 +122,8 @@ OpenAi 기반으로 제공합니다. <br>
 <table>
   <tbody>         
    
-   ![Static Badge](https://img.shields.io/badge/Backend-Jung%20Seou-8A2BE2)   
+   ![Static Badge](https://img.shields.io/badge/Backend-Jung%20Seou-8A2BE2)   ![Discord](https://img.shields.io/discord/1151425937771077643)
+
    https://github.com/Seou0912   
    
    ![Static Badge](https://img.shields.io/badge/Backend-Hwang%20Jiwon-blue)   
