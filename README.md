@@ -123,9 +123,10 @@ OpenAi 기반으로 제공합니다. <br>
   <tbody>         
    
    ![Static Badge](https://img.shields.io/badge/Backend-Jung%20Seou-8A2BE2)   
-
    https://github.com/Seou0912   
-   
+
+   <br>
+   <br>
    ![Static Badge](https://img.shields.io/badge/Backend-Hwang%20Jiwon-blue)   
    https://github.com/benchprincess       
 
