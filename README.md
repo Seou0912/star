@@ -118,14 +118,15 @@ OpenAi 기반으로 제공합니다. <br>
 </table>
 
 
-
 # 팀 정보
 <table>
-  <tbody>
-   https://github.com/Seou0912           : ![Static Badge](https://img.shields.io/badge/Backend-Jung%20Seou-8a2be2)
-   <br>
+  <tbody>         
    
-   https://github.com/benchprincess      : ![Static Badge](https://img.shields.io/badge/Backend-Hwang%20Jiwon-blue)
+   ![Static Badge](https://img.shields.io/badge/Backend-Jung%20Seou-8A2BE2)   
+   https://github.com/Seou0912   
+   
+   ![Static Badge](https://img.shields.io/badge/Backend-Hwang%20Jiwon-blue)   
+   https://github.com/benchprincess       
 
   </tbody>
 </table>
