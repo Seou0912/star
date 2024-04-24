@@ -126,7 +126,7 @@ OpenAi 기반으로 제공합니다. <br>
    https://github.com/Seou0912   
 
    <br>
-   <br>
+   
    ![Static Badge](https://img.shields.io/badge/Backend-Hwang%20Jiwon-blue)   
    https://github.com/benchprincess       
 
