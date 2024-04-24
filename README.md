@@ -122,8 +122,10 @@ OpenAi 기반으로 제공합니다. <br>
 # 팀 정보
 <table>
   <tbody>
-   https://github.com/Seou0912           : Backend 정 서우 <br>
+   https://github.com/Seou0912           : https://img.shields.io/badge/Backend-Jung%20Seou-8a2be2
+ <br>
    
-   https://github.com/benchprincess      : Backend 황 지원
+   https://github.com/benchprincess      : https://img.shields.io/badge/Backend-Hwang%20jiwon-blue
+
   </tbody>
 </table>
