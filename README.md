@@ -62,12 +62,17 @@ OpenAi 기반으로 제공합니다. <br>
     <tr>
       <td>
       <p align="center">
-      <img src="/static/login.gif" width="260" height="450">
+      <img src="/static/loginn.gif" width="240" height="450">
       </p>
       </td>
       <td>
       <p align="center">
-      <img src="/static/signup.gif" width="260" height="450">
+      <img src="/static/login.gif" width="240" height="450">
+      </p>
+      </td>
+      <td>
+      <p align="center">
+      <img src="/static/signup.gif" width="240" height="450">
       </p>
       </td>
     <tr/>
